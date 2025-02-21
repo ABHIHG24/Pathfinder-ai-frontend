@@ -15,12 +15,12 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "About", link: "About" },
+    { name: "About", link: "/About" },
     { name: "Career", link: "/Career" },
     { name: "AI Chat", link: "/ai-chat" },
     { name: "Resources", link: "/Resources" },
-    ...(user ? [{ name: "Community", link: "/community" }] : []),
-    ...(user ? [{ name: "Dashboard", link: "/dashboard" }] : []),
+    ...(user ? [{ name: "Community", link: "/Community" }] : []),
+    ...(user ? [{ name: "Dashboard", link: "/Dashboard" }] : []),
   ];
 
   const themes = {

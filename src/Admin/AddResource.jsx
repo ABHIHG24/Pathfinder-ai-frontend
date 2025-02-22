@@ -35,6 +35,7 @@ const AddResource = () => {
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
+          withCredentials: true,
         }
       );
       toast.success("Resource added successfully!");

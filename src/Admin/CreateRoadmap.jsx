@@ -92,6 +92,7 @@ function CreateRoadmap() {
           headers: {
             "Content-Type": "multipart/form-data",
           },
+          withCredentials: true,
         }
       );
       setSuccessMessage("Roadmap created successfully!");

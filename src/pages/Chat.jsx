@@ -22,7 +22,8 @@ const Chatbot = () => {
         "https://pathfinder-ai.onrender.com/api/chat",
         {
           query: userInput,
-        }
+        },
+        { withCredentials: true }
       );
       const aiResponse = res.data.message.parts[0].text;
       setResponses((prev) => [

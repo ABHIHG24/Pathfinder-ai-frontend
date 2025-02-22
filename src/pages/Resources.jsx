@@ -9,7 +9,8 @@ const DisplayResources = () => {
     const fetchResources = async () => {
       try {
         const response = await axios.get(
-          "https://pathfinder-ai.onrender.com/api/resources"
+          "https://pathfinder-ai.onrender.com/api/resources",
+          { withCredentials: true }
         );
         // console.log(response.data);
         setResources(response.data);
